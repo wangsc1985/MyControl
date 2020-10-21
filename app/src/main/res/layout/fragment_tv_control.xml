@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TvControlFragment" >
+
+    <TextView
+        android:id="@+id/clock_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="正在连接CLOCK..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/repeat"
+        app:layout_constraintBottom_toTopOf="@+id/iv_forward"
+        app:layout_constraintEnd_toEndOf="@+id/iv_forward"
+        app:layout_constraintStart_toEndOf="@+id/iv_play"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/sound"
+        app:layout_constraintBottom_toTopOf="@+id/iv_rewind"
+        app:layout_constraintEnd_toStartOf="@+id/iv_play"
+        app:layout_constraintStart_toStartOf="@+id/iv_rewind"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="正在连接TV..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/fast_forward"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_play"
+        app:layout_constraintStart_toEndOf="@+id/iv_play"
+        app:layout_constraintTop_toTopOf="@+id/iv_play" />
+
+    <ImageView
+        android:id="@+id/iv_rewind"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/fast_rewind"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_play"
+        app:layout_constraintEnd_toStartOf="@+id/iv_play"
+        app:layout_constraintTop_toTopOf="@+id/iv_play" />
+
+    <ImageView
+        android:id="@+id/iv_volume_down"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/volume_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_rewind"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rewind" />
+
+    <ImageView
+        android:id="@+id/iv_volume_up"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/volume_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_forward"
+        app:layout_constraintTop_toBottomOf="@+id/iv_forward" />
+
+</android.support.constraint.ConstraintLayout>
