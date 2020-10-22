@@ -37,6 +37,9 @@ class TvControlFragment : Fragment() {
             try {
                 //region 快进快退
                 val socket = Socket(clockIp, 8000) //申请链接
+                uiHandler.post {
+                    clock_status.text="CLOCK已连接"
+                }
                 val dos = DataOutputStream(socket.getOutputStream())
 
                 dos.writeInt(0)
@@ -45,9 +48,6 @@ class TvControlFragment : Fragment() {
                 socket.close()
                 //endregion
 
-                uiHandler.post {
-                    clock_status.text="CLOCK已连接"
-                }
 
             }catch (ex: SocketTimeoutException){
                 uiHandler.post {
@@ -63,6 +63,9 @@ class TvControlFragment : Fragment() {
             try {
                 //region 播放按钮
                 var socket = Socket(tvIp, 8123) //申请链接
+                uiHandler.post {
+                    tv_status.text="TV已连接"
+                }
                 var dos = DataOutputStream(socket.getOutputStream())
                 dos.writeInt(0)
                 dos.flush()
@@ -109,9 +112,6 @@ class TvControlFragment : Fragment() {
                 socket.close()
                 //endregion
 
-                uiHandler.post {
-                    tv_status.text="TV已连接"
-                }
 
             }catch (ex: SocketTimeoutException){
                 uiHandler.post {
