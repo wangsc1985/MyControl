@@ -5,8 +5,8 @@ import android.util.Log
 import java.text.SimpleDateFormat
 import java.util.*
 
-fun e(log:Any){
-    Log.e("wangsc",log.toString())
+fun e(log:Any?){
+    Log.e("wangsc",log?.toString())
 }
 
 fun String.Companion.concat(vararg args:Any):String{

@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.wang17.mycontrol.fragment.ClockControlFragment;
+import com.wang17.mycontrol.fragment.ControlFragment;
 import com.wang17.mycontrol.fragment.TvControlFragment;
 import com.wang17.mycontrol.model.DataContext;
 import com.wang17.mycontrol.model.Setting;
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity{
             tabLayout_menu = findViewById(R.id.tabLayout_menu);
 
             fragmentList.add(new TvControlFragment());
-            tabLayout_menu.addTab(tabLayout_menu.newTab().setText("小电视"));
-//            fragmentList.add(new ClockControlFragment());
-//            tabLayout_menu.addTab(tabLayout_menu.newTab().setText("时钟"));
+            tabLayout_menu.addTab(tabLayout_menu.newTab().setText("电视"));
+//            fragmentList.add(new ControlFragment());
+//            tabLayout_menu.addTab(tabLayout_menu.newTab().setText("遥控"));
 
             tabLayout_menu.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
                 @Override

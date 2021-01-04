@@ -139,7 +139,9 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a92815" />
+                                                <entry key="scalingPercent" value="73" />
+                                                <entry key="text" value="OK" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -150,7 +152,9 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a92815" />
+                                                <entry key="scalingPercent" value="73" />
+                                                <entry key="text" value="OK" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -161,7 +165,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="foregroundAssetType" value="CLIP_ART" />
+                                      <entry key="foregroundAssetType" value="TEXT" />
                                       <entry key="outputName" value="launcher" />
                                     </map>
                                   </option>
@@ -201,7 +205,10 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a92815" />
+                                                <entry key="fontFamily" value="Arial Black" />
+                                                <entry key="paddingPercent" value="50" />
+                                                <entry key="text" value="OK" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -212,12 +219,23 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="color" value="000000" />
+                                                <entry key="color" value="a92815" />
+                                                <entry key="fontFamily" value="Arial Black" />
+                                                <entry key="paddingPercent" value="50" />
+                                                <entry key="text" value="OK" />
                                               </map>
                                             </option>
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="TEXT" />
+                                      <entry key="backgroundColor" value="1cc4b8" />
+                                      <entry key="iconShape" value="CIRCLE" />
+                                      <entry key="outputName" value="ok" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -271,6 +289,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -282,6 +301,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -291,7 +311,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="assetType" value="TEXT" />
                                       <entry key="imageAsset" value="D:\TSBrowserDownloads\control.ico" />
                                       <entry key="outputName" value="volume_on" />
                                     </map>
@@ -376,6 +396,11 @@
                             </entry>
                           </map>
                         </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
+                          </map>
+                        </option>
                       </PersistentState>
                     </value>
                   </entry>
@@ -399,7 +424,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/D:/Android/Sdk/icons/material/materialicons/swap_calls/baseline_swap_calls_24.xml" />
+                                      <entry key="url" value="file:/D:/Android/Sdk/icons/material/materialicons/access_alarm/baseline_access_alarm_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -410,7 +435,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="1cc4b8" />
-                            <entry key="outputName" value="repeat" />
+                            <entry key="outputName" value="alarm" />
                             <entry key="sourceFile" value="E:\workspace\android-studio\myphone" />
                           </map>
                         </option>
